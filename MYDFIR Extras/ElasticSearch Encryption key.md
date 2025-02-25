@@ -1,0 +1,5 @@
+### ElasticSearch Encryption key
+
+xpack.encryptedSavedObjects.encryptionKey: 982a8f82e67bab755d8eb550201278f2
+xpack.reporting.encryptionKey: bad6e49680b519aa846a0b3785ab5c3e
+xpack.security.encryptionKey: ab6cb0ad98d1f09aefd647ea1647091f

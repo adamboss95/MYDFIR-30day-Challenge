@@ -1,0 +1,1 @@
+Youtube: copy link -> notegpt.io/youtube-video-summarizer -> copy transcript -> copilot/gpt -> create notes out of these trasncript
