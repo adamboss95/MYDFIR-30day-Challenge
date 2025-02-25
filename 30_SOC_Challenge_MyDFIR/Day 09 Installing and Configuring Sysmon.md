@@ -8,7 +8,7 @@
 
 **Steps**:
 
-  1. Use Remote Desktop to connect to the Windows server `Challenge-WIN-Haji` (IP and credentials provided).
+  1. Use Remote Desktop to connect to the Windows server `MyDFIR-WIN-wahab` (IP and credentials provided).
   2. Open Microsoft Edge and download Sysmon.
 
 ## 3. Download Sysmon

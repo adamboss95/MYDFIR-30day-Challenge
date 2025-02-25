@@ -16,7 +16,7 @@
 
 1. Search for "Windows" and select **Custom Windows Event Log**.
 2. Click on **Add Custom Windows Event Logs**.
-3. Name the integration (e.g., `Challenge-Win-Sysmon`).
+3. Name the integration (e.g., `MyDFIR-WIN-Sysmon`).
 4. Description: `Collect Sysmon logs from windows hosts`.
 5. Obtain the channel name from Event Viewer on the Windows server:
     - Open Event Viewer.
@@ -32,7 +32,7 @@
 **Steps**:
 
 1. Click on **Add Custom Windows Event Logs**.
-2. Name the integration (e.g., `Challenge-Win-Defender`).
+2. Name the integration (e.g., `MyDFIR-WIN-Defender`).
 3. Description: `Collect Windows Defender logs from widows for Event ID 1116,1117 & 5001`
 4. Obtain the channel name from Event Viewer on the Windows server:
     - Navigate to Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational.
@@ -40,7 +40,7 @@
     - Copy the full name (`Microsoft-Windows-Windows Defender/Operational`).
 5. Paste the channel name into the integration setup.
 6. Specify event IDs to include (e.g., 1116, 1117, 50001).
-7. Add the integration to an existing host and select the agent policy (e.g., `my defer Windows policy`).
+7. Add the integration to an existing host and select the agent policy (e.g., `MyDFIR-Windows-Policy`).
 8. Click on **Save and Continue** and then **Save and Deploy Changes**.
 ## 5. Verify Log Ingestion
 

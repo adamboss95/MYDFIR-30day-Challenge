@@ -170,5 +170,9 @@
     }
   },
   "active": "9e9566289adc3937",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "30_SOC_Challenge_MyDFIR/Day 08 Understanding and Using Sysmon.md",
+    "30_SOC_Challenge_MyDFIR/Day 09 Installing and Configuring Sysmon.md",
+    "30_SOC_Challenge_MyDFIR/Day 10 Ingesting Sysmon and Microsoft Defender Logs into Elasticsearch.md"
+  ]
 }
