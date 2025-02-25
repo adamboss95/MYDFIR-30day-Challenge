@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30_SOC_Challenge_MyDFIR/Day 10 Ingesting Sysmon and Microsoft Defender Logs into Elasticsearch.md",
+                "file": "30_SOC_Challenge_MyDFIR/Day 12 Setting Up an SSH Server and Reviewing Authentication Logs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 10 Ingesting Sysmon and Microsoft Defender Logs into Elasticsearch"
+              "title": "Day 12 Setting Up an SSH Server and Reviewing Authentication Logs"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "30_SOC_Challenge_MyDFIR/Day 10 Ingesting Sysmon and Microsoft Defender Logs into Elasticsearch.md",
+                "file": "30_SOC_Challenge_MyDFIR/Day 12 Setting Up an SSH Server and Reviewing Authentication Logs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Day 10 Ingesting Sysmon and Microsoft Defender Logs into Elasticsearch"
+              "title": "Backlinks for Day 12 Setting Up an SSH Server and Reviewing Authentication Logs"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "30_SOC_Challenge_MyDFIR/Day 10 Ingesting Sysmon and Microsoft Defender Logs into Elasticsearch.md",
+                "file": "30_SOC_Challenge_MyDFIR/Day 12 Setting Up an SSH Server and Reviewing Authentication Logs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Day 10 Ingesting Sysmon and Microsoft Defender Logs into Elasticsearch"
+              "title": "Outgoing links from Day 12 Setting Up an SSH Server and Reviewing Authentication Logs"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "30_SOC_Challenge_MyDFIR/Day 10 Ingesting Sysmon and Microsoft Defender Logs into Elasticsearch.md",
+                "file": "30_SOC_Challenge_MyDFIR/Day 12 Setting Up an SSH Server and Reviewing Authentication Logs.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Day 10 Ingesting Sysmon and Microsoft Defender Logs into Elasticsearch"
+              "title": "Outline of Day 12 Setting Up an SSH Server and Reviewing Authentication Logs"
             }
           }
         ]
@@ -171,8 +171,12 @@
   },
   "active": "9e9566289adc3937",
   "lastOpenFiles": [
-    "30_SOC_Challenge_MyDFIR/Day 08 Understanding and Using Sysmon.md",
+    "30_SOC_Challenge_MyDFIR/Day 11 Understanding and Defending Against Brute Force Attacks.md",
+    "30_SOC_Challenge_MyDFIR/Day 10 Ingesting Sysmon and Microsoft Defender Logs into Elasticsearch.md",
+    "30_SOC_Challenge_MyDFIR/Day 12 Setting Up an SSH Server and Reviewing Authentication Logs.md",
     "30_SOC_Challenge_MyDFIR/Day 09 Installing and Configuring Sysmon.md",
-    "30_SOC_Challenge_MyDFIR/Day 10 Ingesting Sysmon and Microsoft Defender Logs into Elasticsearch.md"
+    "30_SOC_Challenge_MyDFIR/Day 08 Understanding and Using Sysmon.md",
+    "30_SOC_Challenge_MyDFIR/Day 07 Installing Elastic Agent and Setting Up Fleet Server.md",
+    "30_SOC_Challenge_MyDFIR/Day 06 Understanding Fleet Server and Elastic Agent.md"
   ]
 }
