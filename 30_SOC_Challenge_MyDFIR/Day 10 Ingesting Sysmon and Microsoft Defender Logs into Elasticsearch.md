@@ -24,7 +24,7 @@
     - Right-click **Operational** and select **Properties**.
     - Copy the full name (`Microsoft-Windows-Sysmon/Operational`).
 6. Paste the channel name into the integration setup.
-7. Add the integration to an existing host and select the agent policy (e.g., `Challenge Windows Policy`).
+7. Add the integration to an existing host and select the agent policy (e.g., `MyDFIR-Windows-Policy`).
 8. Click on **Save and Continue** and then **Save and Deploy Changes**.
 
 ## 4. Add Microsoft Defender Integration
