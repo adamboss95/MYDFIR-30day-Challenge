@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "homework/Hmz.md",
+                "file": "MYDFIR Extras/RDP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Hmz"
+              "title": "RDP"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "homework/Hmz.md",
+                "file": "MYDFIR Extras/RDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Hmz"
+              "title": "Backlinks for RDP"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "homework/Hmz.md",
+                "file": "MYDFIR Extras/RDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Hmz"
+              "title": "Outgoing links from RDP"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "homework/Hmz.md",
+                "file": "MYDFIR Extras/RDP.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Hmz"
+              "title": "Outline of RDP"
             }
           }
         ]
@@ -171,8 +171,8 @@
   },
   "active": "9e9566289adc3937",
   "lastOpenFiles": [
-    "30_SOC_Challenge_MyDFIR/Day 15 Understanding and Mitigating RDP Abuse.md",
     "homework/Hmz.md",
+    "30_SOC_Challenge_MyDFIR/Day 15 Understanding and Mitigating RDP Abuse.md",
     "30_SOC_Challenge_MyDFIR/Raw Data.md",
     "30_SOC_Challenge_MyDFIR/Day 12 Setting Up an SSH Server and Reviewing Authentication Logs.md",
     "homework/Notes.md",
