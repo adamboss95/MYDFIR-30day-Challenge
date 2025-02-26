@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30_SOC_Challenge_MyDFIR/Day 15 Understanding and Mitigating RDP Abuse.md",
+                "file": "homework/Hmz.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 15 Understanding and Mitigating RDP Abuse"
+              "title": "Hmz"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "30_SOC_Challenge_MyDFIR/Day 15 Understanding and Mitigating RDP Abuse.md",
+                "file": "homework/Hmz.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Day 15 Understanding and Mitigating RDP Abuse"
+              "title": "Backlinks for Hmz"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "30_SOC_Challenge_MyDFIR/Day 15 Understanding and Mitigating RDP Abuse.md",
+                "file": "homework/Hmz.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Day 15 Understanding and Mitigating RDP Abuse"
+              "title": "Outgoing links from Hmz"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "30_SOC_Challenge_MyDFIR/Day 15 Understanding and Mitigating RDP Abuse.md",
+                "file": "homework/Hmz.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Day 15 Understanding and Mitigating RDP Abuse"
+              "title": "Outline of Hmz"
             }
           }
         ]
@@ -171,8 +171,9 @@
   },
   "active": "9e9566289adc3937",
   "lastOpenFiles": [
-    "30_SOC_Challenge_MyDFIR/Raw Data.md",
     "30_SOC_Challenge_MyDFIR/Day 15 Understanding and Mitigating RDP Abuse.md",
+    "homework/Hmz.md",
+    "30_SOC_Challenge_MyDFIR/Raw Data.md",
     "30_SOC_Challenge_MyDFIR/Day 12 Setting Up an SSH Server and Reviewing Authentication Logs.md",
     "homework/Notes.md",
     "30_SOC_Challenge_MyDFIR/Day 11 Understanding and Defending Against Brute Force Attacks.md",
