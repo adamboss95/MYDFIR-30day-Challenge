@@ -171,8 +171,9 @@
   },
   "active": "9e9566289adc3937",
   "lastOpenFiles": [
-    "30_SOC_Challenge_MyDFIR/Day 12 Setting Up an SSH Server and Reviewing Authentication Logs.md",
+    "30_SOC_Challenge_MyDFIR/Raw Data.md",
     "30_SOC_Challenge_MyDFIR/Day 15 Understanding and Mitigating RDP Abuse.md",
+    "30_SOC_Challenge_MyDFIR/Day 12 Setting Up an SSH Server and Reviewing Authentication Logs.md",
     "homework/Notes.md",
     "30_SOC_Challenge_MyDFIR/Day 11 Understanding and Defending Against Brute Force Attacks.md",
     "30_SOC_Challenge_MyDFIR/Day 10 Ingesting Sysmon and Microsoft Defender Logs into Elasticsearch.md",
