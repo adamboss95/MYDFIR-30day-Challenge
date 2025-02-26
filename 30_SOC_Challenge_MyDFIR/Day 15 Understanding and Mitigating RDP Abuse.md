@@ -63,7 +63,7 @@
 
 ## 5. Protecting Against RDP Abuse
 
-### 1. Disable Unused Services
+### 1. Turn Off RDP
 
 - Regularly check for exposed services using tools like Shodan and Censys.
     
