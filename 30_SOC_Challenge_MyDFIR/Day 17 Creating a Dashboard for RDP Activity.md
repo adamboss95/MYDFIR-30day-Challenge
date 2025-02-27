@@ -4,7 +4,7 @@
 
 **Goal**: Learn how to create a dashboard focusing on RDP activity generated from a Windows server and table visualization.
 
-**Task**: Create a map similar to the SSH activity map, but focusing on Windows Server authentication attempts related to RDP and create table visualization.
+**Task**: Create a map similar to the SSH Authentications map, but focusing on Windows Server authentication attempts related to RDP and create table visualization.
 
 ## 3. Steps to Create the Dashboard
 
@@ -25,7 +25,7 @@ event.code:4625 AND agent.name:"MyDFIR-WIN-wahab"
 
 **Save Map**: Title it "RDP Failed Authentication".
 
-**Add to Dashboard**: Select the existing dashboard `MyDFIR-RDP Failed Authentication Activity`
+**Add to Dashboard**: Select the existing dashboard `MyDFIR-RDP Authentication Activity`
 
 ## 4. Creating a Query for Successful Authentications 
 
@@ -55,7 +55,7 @@ event.code:4624 and (winlog.event_data.LogonType:10 or winlog.event_data.LogonTy
 
 ## 6. Creating Visualizations
 
-### 6.1 SSH Failed Activity Table
+### 6.1 SSH Failed Authentications Table
 
 **Create Visualization**: Click on Create Visualization and select Table.
 
@@ -71,13 +71,13 @@ system.auth.ssh.event : * and agent.name:"MyDFIR-Linux-Wahab" and system.auth.ss
 
 **Sort Records**: Sort by count of records in descending order.
 
-**Save Visualization**: Title it `SSH Failed Activity (Table)`
+**Save Visualization**: Title it `SSH Failed Authentications (Table)`
 
-### 6.2 SSH Successful Activity Table
+### 6.2 SSH Successful Authentications Table
 
-**Duplicate Visualization**: Duplicate the SSH failed activity table.
+**Duplicate Visualization**: Duplicate the SSH failed Authentications table.
 
-**Update Title**: Change to `SSH Sucessful Activity (Table)`.
+**Update Title**: Change to `SSH Sucessful Authentications (Table)`.
 
 **Modify Query**: Update the query to focus on successful authentications.
 
@@ -85,9 +85,9 @@ system.auth.ssh.event : * and agent.name:"MyDFIR-Linux-Wahab" and system.auth.ss
 system.auth.ssh.event : * and agent.name:"MyDFIR-Linux-Wahab" and system.auth.ssh.event : "Accepted"
 ```
 
-### 6.3 RDP Failed Activity Table
+### 6.3 RDP Failed Authentications Table
 
-**Duplicate Visualization**: Duplicate the SSH failed activity table.
+**Duplicate Visualization**: Duplicate the SSH failed Authentications table.
 
 **Update Title**: Change to `RDP Failed Authentications`.
 
@@ -97,9 +97,9 @@ system.auth.ssh.event : * and agent.name:"MyDFIR-Linux-Wahab" and system.auth.ss
 event.code:4625 AND agent.name:"MyDFIR-WIN-wahab"
 ```
 
-### 6.4 RDP Successful Activity Table
+### 6.4 RDP Successful Authentications Table
 
-**Duplicate Visualization**: Duplicate the RDP failed activity table.
+**Duplicate Visualization**: Duplicate the RDP failed Authentications table.
 
 **Update Title**: Change to `-RDP Successful Authentications`.
 
