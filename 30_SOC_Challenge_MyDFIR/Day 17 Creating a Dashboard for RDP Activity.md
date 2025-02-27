@@ -14,7 +14,7 @@
 **Query Setup**: Use the saved search query for event code `4625` (failed logins) and agent name.
 
 ```
-event.code:4625 AND agent.name:"Challenge-WIN-Haji"
+event.code:4625 AND agent.name:"MyDFIR-WIN-wahab"
 ```
 
 **Add Layer**: Click on Add Layer, select Choropleth, and choose World Countries for the EMS boundary.
@@ -25,7 +25,7 @@ event.code:4625 AND agent.name:"Challenge-WIN-Haji"
 
 **Save Map**: Title it "RDP Failed Authentication".
 
-**Add to Dashboard**: Select the existing dashboard `Challenge-RDP Failed Authentication Activity`
+**Add to Dashboard**: Select the existing dashboard `MyDFIR-RDP Failed Authentication Activity`
 
 ## 4. Creating a Query for Successful Authentications 
 
@@ -35,14 +35,14 @@ event.code:4625 AND agent.name:"Challenge-WIN-Haji"
 **Logon Types**: Focus on logon types `10` and `7`.
 
 ```
-event.code:4624 and (winlog.event_data.LogonType:10 or winlog.event_data.LogonType:"5") and agent.name:"Challenge-WIN-Haji"
+event.code:4624 and (winlog.event_data.LogonType:10 or winlog.event_data.LogonType:"7") and agent.name:"MyDFIR-WIN-wahab"
 ```
 
 ### Save and Add to Dashboard
 
-**Save Query**: Title it `Challenge-RDP Successful Authentication Activity`.
+**Save Query**: Title it `RDP Successful Authentication`.
 
-**Duplicate Dashboard**: Duplicate the existing dashboard and update the query. and name of the new map `Challenge-RDP Successful Authentication Activity` and replace the query with the modified query.
+**Duplicate Dashboard**: Duplicate the existing dashboard and update the query. and name of the new map `RDP Successful Authentication` and replace the query with the modified query.
 ## 5. Enhancing the Dashboard
 
 ### Adding a Table
@@ -62,7 +62,7 @@ event.code:4624 and (winlog.event_data.LogonType:10 or winlog.event_data.LogonTy
 **Query**
 
 ```
-system.auth.ssh.event : * and agent.name:"Challenge-Linux-Steve" and system.auth.ssh.event : "Failed"
+system.auth.ssh.event : * and agent.name:"MyDFIR-Linux-Wahab" and system.auth.ssh.event : "Failed"
 ```
 
 **Add Fields**: Include timestamp, source IP, username, and country name.
@@ -71,42 +71,42 @@ system.auth.ssh.event : * and agent.name:"Challenge-Linux-Steve" and system.auth
 
 **Sort Records**: Sort by count of records in descending order.
 
-**Save Visualization**: Title it `Challenge-SSH Failed Activity (Table)`
+**Save Visualization**: Title it `SSH Failed Activity (Table)`
 
 ### 6.2 SSH Successful Activity Table
 
 **Duplicate Visualization**: Duplicate the SSH failed activity table.
 
-**Update Title**: Change to `Challenge-SSH Sucessful Activity (Table)`.
+**Update Title**: Change to `SSH Sucessful Activity (Table)`.
 
 **Modify Query**: Update the query to focus on successful authentications.
 
 ```
-system.auth.ssh.event : * and agent.name:"Challenge-Linux-Steve" and system.auth.ssh.event : "Accepted"
+system.auth.ssh.event : * and agent.name:"MyDFIR-Linux-Wahab" and system.auth.ssh.event : "Accepted"
 ```
 
 ### 6.3 RDP Failed Activity Table
 
 **Duplicate Visualization**: Duplicate the SSH failed activity table.
 
-**Update Title**: Change to `Challenge-RDP Failed Authentications`.
+**Update Title**: Change to `RDP Failed Authentications`.
 
 **Modify Query**: Update the query to focus on RDP failed authentications.
 
 ```
-event.code:4625 AND agent.name:"Challenge-WIN-Haji"
+event.code:4625 AND agent.name:"MyDFIR-WIN-wahab"
 ```
 
 ### 6.4 RDP Successful Activity Table
 
 **Duplicate Visualization**: Duplicate the RDP failed activity table.
 
-**Update Title**: Change to `Challenge-RDP Successful Authentications`.
+**Update Title**: Change to `-RDP Successful Authentications`.
 
 **Modify Query**: Update the query to focus on RDP successful authentications.
 
 ```
-event.code:4624 and (winlog.event_data.LogonType:10 or winlog.event_data.LogonType:"5") and agent.name:"Challenge-WIN-Haji"
+event.code:4624 and (winlog.event_data.LogonType:10 or winlog.event_data.LogonType:"5") and agent.name:"MyDFIR-WIN-wahab"
 ```
 
 ## 7. Finalizing the Dashboard

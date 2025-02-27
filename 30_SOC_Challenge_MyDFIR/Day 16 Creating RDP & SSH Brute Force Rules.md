@@ -53,7 +53,7 @@ Save the query as `RDP failed activity`.
 18. Use the custom query from the saved search
 
 ```
-event.code:4625 AND agent.name:"Challenge-WIN-Haji" and user.name:"Administrator" 
+event.code:4625 AND agent.name:"MyDFIR-WIN-wahab" and user.name:"Administrator" 
 ```
 
 19. In the `Group by` add `user.name` and `source.ip` fields.
@@ -77,7 +77,7 @@ system.auth.ssh.event : * and agent.name:"MyDFIR-Linux-Wahab" and system.auth.ss
 
 28. In the `Group by` add `user.name` and `source.ip` fields.
 29. For the required field also add these two `user.name` and `source.ip`.
-30. Name the rule (e.g., `MyDFIR-SSH-Brute-Force-Attempt-Steve`).
+30. Name the rule (e.g., `MyDFIR-SSH-Brute-Force-Attempt-Wahab`).
 31. Set the severity to medium and configure advanced settings if needed.
 32. Schedule the rule to run every 5 minutes.
 33. Create and enable the rule.
