@@ -1,6 +1,10 @@
 ### MITR Attack
 the **MITRE ATT&CK** framework is a comprehensive knowledge base of adversary tactics and techniques based on real-world observations.
 
+> [! ]
+> Techniques of MitreAttack
+> https://attack.mitre.org/tactics/TA0011/
+
 #### Key Components of MITRE ATT&CK:
 
 1. **Tactics:** The "why" of an attack, representing the adversary's goals (e.g., initial access, execution, persistence).
