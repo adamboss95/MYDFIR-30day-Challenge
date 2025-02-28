@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30_SOC_Challenge_MyDFIR/Day 17 Creating a Dashboard for RDP Activity.md",
+                "file": "30_SOC_Challenge_MyDFIR/Day 06 Understanding Fleet Server and Elastic Agent.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 17 Creating a Dashboard for RDP Activity"
+              "title": "Day 06 Understanding Fleet Server and Elastic Agent"
             }
           }
         ]
@@ -171,23 +171,31 @@
   },
   "active": "9e9566289adc3937",
   "lastOpenFiles": [
+    "homework/True False Cases.md",
+    "homework/Terms in CyberSecurity.md",
+    "homework/Task 3.md",
+    "homework/Task 2.md",
+    "homework/Task 1.md",
+    "homework/s.md",
+    "homework/Raid.md",
+    "homework/Notes.md",
+    "homework/NAT.md",
+    "homework/KDC.md",
+    "homework/IOA & IOC.md",
+    "homework/IIS and Apache.md",
+    "homework/Hypervisor.md",
+    "homework/Hmz.md",
+    "homework/Exploit Tools.md",
+    "homework/Elastic Recording Notes.md",
+    "MYDFIR Extras/Elastic-Passwd.md",
+    "MYDFIR Extras/ElasticSearch Encryption key.md",
+    "MYDFIR Extras/Elasticsearch-Enrollment-Token.md",
+    "MYDFIR Extras/MyDFIR.md",
+    "MYDFIR Extras/RDP.md",
+    "30_SOC_Challenge_MyDFIR/Day 17 Creating a Dashboard for RDP Activity.md",
     "30_SOC_Challenge_MyDFIR/Day 16 Creating RDP & SSH Brute Force Rules.md",
     "30_SOC_Challenge_MyDFIR/Day 15 Understanding and Mitigating RDP Abuse.md",
     "30_SOC_Challenge_MyDFIR/Day 14 Creating SSH Brute Force Alerts and Dashboards.md",
-    "30_SOC_Challenge_MyDFIR/Raw Data.md",
-    "30_SOC_Challenge_MyDFIR/Day 17 Creating a Dashboard for RDP Activity.md",
-    "homework/Attacks/MITRE Attack.md",
-    "homework/Exploit Tools.md",
-    "MYDFIR Extras/RDP.md",
-    "30_SOC_Challenge_MyDFIR/Day 13 Installing Elastic Agent on SSH Server.md",
-    "homework/Hmz.md",
-    "30_SOC_Challenge_MyDFIR/Day 12 Setting Up an SSH Server and Reviewing Authentication Logs.md",
-    "homework/Notes.md",
-    "30_SOC_Challenge_MyDFIR/Day 11 Understanding and Defending Against Brute Force Attacks.md",
-    "30_SOC_Challenge_MyDFIR/Day 10 Ingesting Sysmon and Microsoft Defender Logs into Elasticsearch.md",
-    "30_SOC_Challenge_MyDFIR/Day 09 Installing and Configuring Sysmon.md",
-    "30_SOC_Challenge_MyDFIR/Day 08 Understanding and Using Sysmon.md",
-    "30_SOC_Challenge_MyDFIR/Day 07 Installing Elastic Agent and Setting Up Fleet Server.md",
-    "30_SOC_Challenge_MyDFIR/Day 06 Understanding Fleet Server and Elastic Agent.md"
+    "30_SOC_Challenge_MyDFIR/Raw Data.md"
   ]
 }
