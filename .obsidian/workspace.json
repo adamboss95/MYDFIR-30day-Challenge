@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30_SOC_Challenge_MyDFIR/Day 06 Understanding Fleet Server and Elastic Agent.md",
+                "file": "MYDFIR Extras/Elastic-Passwd.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 06 Understanding Fleet Server and Elastic Agent"
+              "title": "Elastic-Passwd"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "9e9566289adc3937",
   "lastOpenFiles": [
+    "30_SOC_Challenge_MyDFIR/Day 06 Understanding Fleet Server and Elastic Agent.md",
     "homework/True False Cases.md",
     "homework/Terms in CyberSecurity.md",
     "homework/Task 3.md",
@@ -195,7 +196,6 @@
     "30_SOC_Challenge_MyDFIR/Day 17 Creating a Dashboard for RDP Activity.md",
     "30_SOC_Challenge_MyDFIR/Day 16 Creating RDP & SSH Brute Force Rules.md",
     "30_SOC_Challenge_MyDFIR/Day 15 Understanding and Mitigating RDP Abuse.md",
-    "30_SOC_Challenge_MyDFIR/Day 14 Creating SSH Brute Force Alerts and Dashboards.md",
-    "30_SOC_Challenge_MyDFIR/Raw Data.md"
+    "30_SOC_Challenge_MyDFIR/Day 14 Creating SSH Brute Force Alerts and Dashboards.md"
   ]
 }

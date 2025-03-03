@@ -21,3 +21,6 @@ Generate an enrollment token for Elasticsearch nodes with
 '/usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s node'.
 
 -------------------------------------------------------------------------------------------------
+
+
+User: elastic
