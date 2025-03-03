@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MYDFIR Extras/Elastic-Passwd.md",
+                "file": "MYDFIR Extras/Mythic.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Elastic-Passwd"
+              "title": "Mythic"
             }
           }
         ]
@@ -171,6 +171,8 @@
   },
   "active": "9e9566289adc3937",
   "lastOpenFiles": [
+    "MYDFIR Extras/Elastic-Passwd.md",
+    "MYDFIR Extras/Mythic.md",
     "30_SOC_Challenge_MyDFIR/Day 06 Understanding Fleet Server and Elastic Agent.md",
     "homework/True False Cases.md",
     "homework/Terms in CyberSecurity.md",
@@ -188,14 +190,12 @@
     "homework/Hmz.md",
     "homework/Exploit Tools.md",
     "homework/Elastic Recording Notes.md",
-    "MYDFIR Extras/Elastic-Passwd.md",
     "MYDFIR Extras/ElasticSearch Encryption key.md",
     "MYDFIR Extras/Elasticsearch-Enrollment-Token.md",
     "MYDFIR Extras/MyDFIR.md",
     "MYDFIR Extras/RDP.md",
     "30_SOC_Challenge_MyDFIR/Day 17 Creating a Dashboard for RDP Activity.md",
     "30_SOC_Challenge_MyDFIR/Day 16 Creating RDP & SSH Brute Force Rules.md",
-    "30_SOC_Challenge_MyDFIR/Day 15 Understanding and Mitigating RDP Abuse.md",
-    "30_SOC_Challenge_MyDFIR/Day 14 Creating SSH Brute Force Alerts and Dashboards.md"
+    "30_SOC_Challenge_MyDFIR/Day 15 Understanding and Mitigating RDP Abuse.md"
   ]
 }
