@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "homework/Terms in CyberSecurity.md",
+                "file": "30_SOC_Challenge_MyDFIR/Day 21 Performing a Brute Force Attack and Establishing a C2 Session.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Terms in CyberSecurity"
+              "title": "Day 21 Performing a Brute Force Attack and Establishing a C2 Session"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "9e9566289adc3937",
   "lastOpenFiles": [
+    "homework/Terms in CyberSecurity.md",
     "MYDFIR Extras/RDP.md",
     "30_SOC_Challenge_MyDFIR/Day 18 Command and Control (C2) in Cyber Security.md",
     "30_SOC_Challenge_MyDFIR/Day 19 Creating an Attack Diagram.md",
@@ -180,7 +181,6 @@
     "MYDFIR Extras/Elastic-Passwd.md",
     "30_SOC_Challenge_MyDFIR/Day 06 Understanding Fleet Server and Elastic Agent.md",
     "homework/True False Cases.md",
-    "homework/Terms in CyberSecurity.md",
     "homework/Task 3.md",
     "homework/Task 2.md",
     "homework/Task 1.md",
