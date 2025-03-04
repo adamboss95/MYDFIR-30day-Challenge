@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MYDFIR Extras/RDP.md",
+                "file": "homework/Terms in CyberSecurity.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RDP"
+              "title": "Terms in CyberSecurity"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "9e9566289adc3937",
   "lastOpenFiles": [
+    "MYDFIR Extras/RDP.md",
     "30_SOC_Challenge_MyDFIR/Day 18 Command and Control (C2) in Cyber Security.md",
     "30_SOC_Challenge_MyDFIR/Day 19 Creating an Attack Diagram.md",
     "30_SOC_Challenge_MyDFIR/Day 20 Setting Up Mythic C2 Instance.md",
@@ -195,7 +196,6 @@
     "homework/Exploit Tools.md",
     "homework/Elastic Recording Notes.md",
     "MYDFIR Extras/ElasticSearch Encryption key.md",
-    "MYDFIR Extras/Elasticsearch-Enrollment-Token.md",
-    "MYDFIR Extras/MyDFIR.md"
+    "MYDFIR Extras/Elasticsearch-Enrollment-Token.md"
   ]
 }
