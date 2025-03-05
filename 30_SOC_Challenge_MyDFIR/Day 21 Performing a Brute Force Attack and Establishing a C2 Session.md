@@ -226,7 +226,8 @@ Run commands like `whoami` and `ifconfig` to verify the connection.
 
 **Download Fake Password File**:
 
-On Mythic GUI
+On Mythic GUI, callback interact
+
 Use Mythic's download command to retrieve the `passwords.txt` file.
 
 Command:
