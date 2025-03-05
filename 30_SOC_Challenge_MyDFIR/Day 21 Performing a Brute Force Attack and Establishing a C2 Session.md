@@ -117,11 +117,22 @@ In RDP session open commands prompt/powershell and runs these commands to discov
  Access Mythic web GUI and SSH session.
  
  In*stall Apollo agent:*
- 
- Command: 
- 
+
+Go to Mythic Directory
 ```
-./mythic-cli install github https://github.com/MythicAgents/Apollo
+cd Mythic/
+```
+
+ Command: 
+
+For Root User
+```
+./mythic-cli install github https://github.com/MythicAgents/Apollo.git
+```
+
+For Non-Root User
+```
+sudo -E ./mythic-cli install github https://github.com/MythicAgents/Apollo.git
 ```
 
 *Install HTTP C2 profile:*
