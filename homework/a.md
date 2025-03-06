@@ -34,12 +34,12 @@ client.nat.ip
 client.nat.port
 client.packets
 client.port
-client.registered_domain	keyword					Edit	
-client.subdomain	keyword					Edit	
-client.top_level_domain	keyword					Edit	
-client.user.domain	keyword					Edit	
-client.user.email	keyword					Edit	
-client.user.full_name	keyword					Edit	
+client.registered_domain
+client.subdomain
+client.top_level_domain
+client.user.domain
+client.user.email
+client.user.full_name	
 client.user.full_name.text	text					Edit	
 client.user.group.domain	keyword					Edit	
 client.user.group.id	keyword					Edit	
