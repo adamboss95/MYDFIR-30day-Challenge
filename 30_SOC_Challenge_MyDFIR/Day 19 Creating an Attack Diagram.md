@@ -66,6 +66,5 @@
 
 ## Diagram
 
-![Attack_Diagram](Images/Attack_Diagram.png)
-
+![[MitrAttack.drawio.png]]
 [Day 20 Setting Up Mythic C2 Instance](Day%2020%20Setting%20Up%20Mythic%20C2%20Instance.md)
