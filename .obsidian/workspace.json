@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "homework/to do lsit.md",
+                "file": "homework/a.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "to do lsit"
+              "title": "a"
             }
           }
         ]
@@ -171,8 +171,9 @@
   },
   "active": "9e9566289adc3937",
   "lastOpenFiles": [
-    "30_SOC_Challenge_MyDFIR/Day 21 Performing a Brute Force Attack and Establishing a C2 Session.md",
     "homework/to do lsit.md",
+    "homework/a.md",
+    "30_SOC_Challenge_MyDFIR/Day 21 Performing a Brute Force Attack and Establishing a C2 Session.md",
     "30_SOC_Challenge_MyDFIR/Day 20 Setting Up Mythic C2 Instance.md",
     "30_SOC_Challenge_MyDFIR/Day 22 Creating Alerts and Dashboards for Mythic Activity.md",
     "30_SOC_Challenge_MyDFIR/Day 19 Creating an Attack Diagram.md",
@@ -198,7 +199,6 @@
     "homework/KDC.md",
     "homework/IOA & IOC.md",
     "homework/IIS and Apache.md",
-    "homework/Hypervisor.md",
-    "homework/Hmz.md"
+    "homework/Hypervisor.md"
   ]
 }
