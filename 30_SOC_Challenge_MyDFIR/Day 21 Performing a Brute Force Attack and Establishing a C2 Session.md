@@ -249,6 +249,3 @@ Successfully performed a Brute Force attack and established a C2 session.
 Downloaded and executed a payload on the Windows server.
 Retrieved a fake password file using the established C2 connection.
 
-**Next Steps**:
-
-Create alerts and dashboards to detect Mythic activity.

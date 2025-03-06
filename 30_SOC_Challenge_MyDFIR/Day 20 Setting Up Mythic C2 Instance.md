@@ -18,7 +18,7 @@ Uses **Vultr Cloud Provider** for hosting the Mythic C2 instance.
 - **Location:** Singapore
 - **OS:** Ubuntu (4GB RAM)
 - Disable **Auto Backups & IPv6**
-- Set **hostname:** `Challenge-Mythic`
+- Set **hostname:** `MyDFIR-Mythic`
 
 3. Deploy the server. 
 
@@ -37,7 +37,7 @@ Uses **Vultr Cloud Provider** for hosting the Mythic C2 instance.
 Open PowerShell and SSH into the Vultr Mythic Mythic:
 
 ```
-ssh root@<challenge_mythic_server_ip>
+ssh root@<MyDFIR_mythic_server_ip>
 ```
 
 Update & Upgrade System
@@ -85,33 +85,33 @@ systemctl status docker
 
 ## Configuring Firewall
 
-**Create a Firewall Group** `Challenge-Mythic-Firewall`on Vultr.
+**Create a Firewall Group** `MyDFIR-Mythic-Firewall`on Vultr.
    
 **Allow TCP Traffic** from trusted IPs only:
 
 - TCP **1-65535** (Source: Personal IP)
 
-- TCP **1-65535** (Source: `Challenge-WIN-Haji`)
+- TCP **1-65535** (Source: `MyDFIR-WIN-wahab`)
 
-- TCP **1-65535** (Source: `Challenge-Linux-Steve`)
+- TCP **1-65535** (Source: `MyDFIR-Linux-Wahab`)
 
-Apply `Challenge-Mythic-Firewall` to Mythic Server
+Apply `MyDFIR-Mythic-Firewall` to Mythic Server
 
 ## Accessing Mythic C2 Web Interface
 
-Copy the **server's public IP**.
+Copy the Mythic **server's public IP**.
 
 Open a browser and navigate to:
 
 ```
-https://<server_ip>:7443
+https://<Mythic-server_ip>:7443
 ```
 
 **Login Credentials**:
  
 Default **Username:** `mythic_admin`   
 
-Password stored in the `.env` file:
+Password stored in the Mythic Server `.env` file:
 
 ```
 cat .env
@@ -119,9 +119,9 @@ cat .env
 
 **Change Operation Name**
 
-Default: `operation-cima`
+Default: `operation-chimera`
 
-Can be renamed (e.g., `operation-challenge`).
+Can be renamed (e.g., `operation-kratos`).
 
 ## Mythic C2 Dashboard Overview
 
@@ -138,11 +138,3 @@ Can be renamed (e.g., `operation-challenge`).
 **Tags:** Categorize targets.
    
 **Dark Mode:** Available for UI preference.
-
-## Next Steps
-
-In the next sessions:
-
-- Create a **Mythic agent**.   
-- Attack a Windows Server created on **Day 5**.
-- **Important:** Only practice in a controlled, authorized environment.
