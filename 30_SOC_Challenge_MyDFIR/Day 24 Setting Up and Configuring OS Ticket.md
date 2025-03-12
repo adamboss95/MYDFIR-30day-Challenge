@@ -103,7 +103,7 @@
     - Make a backup of the file.
     - Scroll down to where the `/* Bind to the localhost ipv4 address and tcp */` is and change the server host to your `MyDFIR-OSticket` public IP address and password to new password `Winter2024!`
     
-    - Change the `pma`  user password to new password `Winter2024!` under User for advanced features and password to new password `Winter2024!`.
+    - Change the `pma`  user password to new password `Winter2024!` under `/* User for advanced features */` and password to new password `Winter2024!`.
 
 ## 8. Installing OS Ticket
 
@@ -178,6 +178,9 @@ icacls ./ost-config.php /reset
     - Use the staff control panel URL to log in as an agent.
     - Enter the username and password created during setup.
 
+> [!NOTE]
+> Your osTicket URL doesnt let you login for some reason, so make sure to use the staff control panel URL to login
+
 ## 11. Exploring OS Ticket
 
 **Steps**:
@@ -193,11 +196,5 @@ icacls ./ost-config.php /reset
     - Use the admin panel to manage and track tickets.
     - Assign and transfer tickets as needed.
 
-## 12. Conclusion
-
-**Summary**:
-
-- Successfully set up and configured OS Ticket.
-- Explored the admin panel and basic functionalities.
 
 [Day 25 Integrating OS Ticket into Your Tech Stack](Day%2025%20Integrating%20OS%20Ticket%20into%20Your%20Tech%20Stack.md)

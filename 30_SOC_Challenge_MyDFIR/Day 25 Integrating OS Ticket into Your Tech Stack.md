@@ -16,9 +16,9 @@
 **Add New API Key**:
    
 - Click on ~Add New API Key~.
-- Enter the private IP address of your `Challenge-ELK` server (if in the same VPC) or the public IP address (if not).
+- Enter the private IP address of your `MyDFIR-ELK` server (if in the same VPC) or the public IP address (if not).
 - Enable the `Can Create Tickets` service.
-- Add internal notes (e.g., `Challenge- 30 day SOC  Elastic Connector`).
+- Add internal notes (e.g., `MyDFIR- 30 day SOC  Elastic Connector`).
 - Click `Add Key` and copy the generated API key.
 
 ## 3. Configuring Elastic Connector
@@ -39,10 +39,6 @@
 - Enter the URL: `http://<OS_Ticket_IP>/osticket/upload/api/tickets.xml`
 - Select `None` for authentication
 - Add an HTTP header with the key `x-api-key` and the value as the copied API key.
-
-```
-
-```
 - Click `Save and Test`.
 
 ## 4. Creating Action Body
@@ -82,7 +78,7 @@
 **Customize Payload**:
  
 - Paste the XML payload into the connector action body.
-- Change the subject to `Callenge - Haji`.
+- Change the subject to `Callenge - Wahab`.
 
 ## 5. Troubleshooting Connection Issues
 
@@ -91,16 +87,16 @@
 1. **Check Network Connection**:
     
     - If you encounter a timeout error, it indicates a network connection issue.
-    - Open a PowerShell session and `SSH` into your `Challenge-ELK` server to troubleshoot.
+    - Open a PowerShell session and `SSH` into your `MyDFIR-ELK` server to troubleshoot.
 
 2. **Verify IP Configuration**:
     
     - Ensure the OS Ticket server has the correct private IP address.
-    - Update the network adapter settings if necessary to set IPv4 address to the Challenge-OSticket Private VPC address.
+    - Update the network adapter settings if necessary to set IPv4 address to the MyDFIR-OSticket Private VPC address.
 
 3. **Update Connector Configuration**:
     
-    - Change the connector URL to use the private `Challenge-OSticket ` server IP address of the OS Ticket server.
+    - Change the connector URL to use the private `MyDFIR-OSticket ` server IP address of the OS Ticket server.
     - Save and rerun the test.
 
 ## 6. Confirming Integration
