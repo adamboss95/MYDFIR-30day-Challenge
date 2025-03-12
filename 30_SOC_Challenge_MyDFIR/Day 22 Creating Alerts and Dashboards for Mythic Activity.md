@@ -15,7 +15,7 @@
 
 **Query for Mythic C2 Activity**:
    
-- Search for the binary `svrhost-haji.exe`.
+- Search for the binary `svchost-Wahab.exe`.
 - Adjust the time range to 30 days to capture all relevant events.
 - Sort events from old to new.
 
@@ -41,7 +41,7 @@ event.code:1 and (winlog.event_data.OriginalFileName:"Apollo.exe" or   winlog.ev
 
 **Save the Search**
 
-- Save the search as `Challenge Mythic Apollo Process Create`.
+- Save the search as `MyDFIR Mythic Apollo Process Create`.
 ## 3. Building the Alert
 
 **Steps**:
@@ -62,7 +62,7 @@ event.code:1 and (winlog.event_data.OriginalFileName:"Apollo.exe" or   winlog.ev
 
 **3. Finalize and Enable Rule**:
  
-- Name the rule `Challenge Mythic Apollo Process Create Detected`
+- Name the rule `MyDFIR Mythic Apollo Process Create Detected`
 - Set severity to critical and configure the rule to run every 5 minutes.
 - Enable the rule.
 
@@ -140,6 +140,6 @@ event.code:5001 and event.provider:"Microsoft-Windows-Windows Defender"
 - `Process Created (PowerShell, CMD, rundll32)`
 - `Process Initiated Network Connections`
 - `Microsoft Defender Disabled`
-- Save the dashboard as `Challenge Suspicious Activity`
+- Save the dashboard as `MyDFIR Suspicious Activity`
 
 [Day 23 Introduction to Ticketing Systems](Day%2023%20Introduction%20to%20Ticketing%20Systems.md)

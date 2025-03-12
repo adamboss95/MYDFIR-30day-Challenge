@@ -17,7 +17,7 @@
     - Select `Cloud Regular Compute` plan with 55 GB, 1 CPU, and 2 GB of memory.
     - Disable `auto backup` and `IPv6`.
     - Enable `Virtual Private Cloud`.
-    - Set the host name to `Challenge-OSticket`.
+    - Set the host name to `MyDFIR-OSticket`.
     - Click `Deploy Now`.
 
 2. **Access the Server**:
@@ -26,7 +26,7 @@
     - RDP into the machine using the provided username and password using `xfreerdp`.
 
 ```
- xfreerdp /v:<Challenge-OSticket-IP> /u:Administrator
+ xfreerdp /v:<MyDFIR-OSticket-IP> /u:Administrator
 ```
 
 ## 3. Setting Up the Firewall
@@ -61,7 +61,7 @@
 1. **Edit Properties Configuration File**:
     
     - Go to `C:\xampp` and find the `properties` configuration file.
-    - Change the  `apache_domainname` to your `Challenge-OSticket` public IP address.
+    - Change the  `apache_domainname` to your `MyDFIR-OSticket` public IP address.
     - Save the changes.
 
 2. **Create Firewall Rules**:
@@ -91,17 +91,17 @@
 1. **Authorize Public IP Address**:
     
     - Go to PHP MyAdmin and select `User Accounts`.
-    - Modify the `root` account which have hostname `localhost` & in `login information` change the hostname to `Challenge-OSticket` public IP address.
+    - Modify the `root` account which have hostname `localhost` & in `login information` change the hostname to `MyDFIR-OSticket` public IP address.
     - Set the password to `Winter2024!`.
 
-	- Modify the `pma` account which have hostname `localhost` & in `login information` change the hostname to `Challenge-OSticket` public IP  address.
+	- Modify the `pma` account which have hostname `localhost` & in `login information` change the hostname to `MyDFIR-OSticket` public IP  address.
 	- Set the password to `Winter2024!`.
 
 2. **Edit PHP Admin Configuration File**:
     
     - Go to the `phpMyAdmin` directory and find `config.inc.php`.
     - Make a backup of the file.
-    - Change the server host to your `Challenge-OSticket` public IP address and password to new password `Winter2024!`
+    - Scroll down to where the `/* Bind to the localhost ipv4 address and tcp */` is and change the server host to your `MyDFIR-OSticket` public IP address and password to new password `Winter2024!`
     
     - Change the `pma`  user password to new password `Winter2024!` under User for advanced features and password to new password `Winter2024!`.
 
@@ -121,7 +121,7 @@
 
 3. **Access OS Ticket Setup Page**:
     
-    - Open a browser and navigate to `http://<Challenge-OSticketpublic_ip>/osticket/upload`.
+    - Open a browser and navigate to `http://<MyDFIR-OSticketpublic_ip>/osticket/upload`.
     - Follow the setup instructions.
 
 4. **Rename Configuration File**:
@@ -137,7 +137,7 @@
 1. **Basic Installation**:
     
     - Enter the help desk name, admin username, and password.
-    - Create a new database in PHP MyAdmin named `challenge-db`.
+    - Create a new database in PHP MyAdmin named `MyDFIR-db`.
 
 2. **Database Configuration**:
     
@@ -169,9 +169,9 @@ icacls ./ost-config.php /reset
     - Copy the OS Ticket URL and staff control panel URL.
     - Save these URLs for future access.
 
-|**Your osTicket URL:**  <br>[http://Challenge-OSticket-IP/osticket/upload/](http://45.76.156.191/osticket/upload/)|
+|**Your osTicket URL:**  <br>[http://MyDFIR-OSticket-IP/osticket/upload/](http://45.76.156.191/osticket/upload/)|
 
-**Your Staff Control Panel:**  <br>[http://Challenge-OSticket-IP/osticket/upload/scp](http://45.76.156.191/osticket/upload/scp/admin.php)|
+**Your Staff Control Panel:**  <br>[http://MyDFIR-OSticket-IP/osticket/upload/scp](http://45.76.156.191/osticket/upload/scp/admin.php)|
 
 3. **Log in to OS Ticket**:
     
