@@ -55,7 +55,7 @@
 <ticket alert="true" autorespond="true" source="API">
     <name>Angry User</name>
     <email>api@osticket.com</email>
-    <subject>Testing API</subject>
+    <subject>MyDFIR-30DayChallenge-Wahab</subject>
     <phone>318-555-8634X123</phone>
     <message type="text/plain"><![CDATA[Message content here]]></message>
     <attachments>

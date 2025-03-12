@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30_SOC_Challenge_MyDFIR/Day 25 Integrating OS Ticket into Your Tech Stack.md",
+                "file": "MYDFIR Extras/Mythic.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 25 Integrating OS Ticket into Your Tech Stack"
+              "title": "Mythic"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "9e9566289adc3937",
   "lastOpenFiles": [
+    "30_SOC_Challenge_MyDFIR/Day 25 Integrating OS Ticket into Your Tech Stack.md",
     "30_SOC_Challenge_MyDFIR/Day 01 Introduction and Network Diagram Creation.md",
     "30_SOC_Challenge_MyDFIR/Day 02 ELK Stack – Elasticsearch Logstash and Kibana.md",
     "30_SOC_Challenge_MyDFIR/Day 03 Setting Up an Elasticsearch Instance.md",
@@ -195,7 +196,6 @@
     "30_SOC_Challenge_MyDFIR/Day 22 Creating Alerts and Dashboards for Mythic Activity.md",
     "30_SOC_Challenge_MyDFIR/Day 23 Introduction to Ticketing Systems.md",
     "30_SOC_Challenge_MyDFIR/Day 24 Setting Up and Configuring OS Ticket.md",
-    "30_SOC_Challenge_MyDFIR/Day 25 Integrating OS Ticket into Your Tech Stack.md",
     "MYDFIR Extras/RDP.md",
     "Pasted image 20250220162344.png",
     "30_SOC_Challenge_MyDFIR/Images/Network_Diagram.png",
